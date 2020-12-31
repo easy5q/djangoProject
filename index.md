@@ -1,12 +1,35 @@
 ## Добро пожаловать на страницы GitHub
 
-Вы можете использовать [editor on GitHub](https://github.com/easy5q/djangoProject/edit/gh-pages/index.md) для поддержки и предварительного просмотра содержимого вашего веб-сайта в файлах Markdown.
+    pip install jupyter-kite
+    jupyter labextension install "@kiteco/jupyterlab-kite"
+    
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**Обновление плагина**
+
+Мы периодически отправляем обновления для плагина Jupyter Lab. В настоящее время вам необходимо вручную обновить плагин с помощью команд терминала. Для этого остановите запущенный процесс Jupyter Lab, а затем выполните две команды:
+
+    pip install --upgrade jupyter-kite
+    jupyter labextension update "@kiteco/jupyterlab-kite"
+
+
+**Поиск проблемы**
+
+Если у вас возникли проблемы с установкой плагина Kite Jupyter Lab, сначала убедитесь, что у вас установлена ​​Jupyter Lab v2..  2 или новее, и что у вас установлено и запущено приложение Kite Engine.
+
+Кроме того, если у вас установлено расширение `jupyterlab-lsp`, вы должны отключить его, чтобы плагин Kite работал.
+
+Если вы соответствуете этим требованиям, пожалуйста, откройте проблему в нашей системе отслеживания проблем и предоставьте следующую информацию:
+
+* Your OS
+* Журналы консоли вашего браузера
+* Your terminal console output (as much of as possible, not just the first or final line)
+* The output of jupyter labextension list and `jupyter serverextension list`
+* The output of `pip list`
+* If you use `conda`, please share your environment
 
 ### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Markdown - это легкий и простой в использовании синтаксис для стилизации вашего текста. Он включает соглашения для
 
 ```markdown
 Выделенный синтаксисом блок кода
